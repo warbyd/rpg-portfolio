@@ -1,0 +1,59 @@
+.about-container {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+
+.clickable-element-about1 {
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 390px;
+  left: 310px;
+  background-color: rgba(223, 9, 9, 0.5);
+  
+}
+
+.clickable-element-about2 {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 540px;
+  left: 120px;
+  background-color: rgba(255, 78, 217, 0.5);
+}
+
+.clickable-element-about3 {
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 540px;
+  left: 310px;
+  background-color: rgba(209, 255, 6, 0.5);
+}
+
+.clickable-element-about4 {
+  cursor: pointer;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 390px;
+  left: 15px;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+/* Media query for larger devices */
+@media only screen and (min-width: 768px) {
+  .about-container {
+    width: 100%;
+    height: 100vh;
+  }
+}

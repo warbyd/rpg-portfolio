@@ -1,0 +1,68 @@
+/* Default styling */
+.background-container {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.clickable-element {
+  position: absolute;
+  width: 180px;
+  height: 150px;
+  cursor: pointer;
+  
+}
+
+.clickable-element-projects {
+  top: 350px;
+  left: 10px;
+  background-color: rgba(253, 255, 242, 0.5);
+}
+
+.clickable-element-contact {
+  top: 350px;
+  left: 200px;
+  background-color: rgba(229, 255, 113, 0.5);
+}
+
+.popup-trigger-home1 {
+  display: none; /* Hide the popup triggers initially */
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 100%;
+  margin-bottom: 200px;
+  left: 100px;
+  transform: translate(-50%, -20px);
+  pointer-events: none;
+}
+
+.popup-trigger-home2 {
+  display: none; /* Hide the popup triggers initially */
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 70%;
+  margin-bottom: 200px;
+  left: -100px;
+  transform: translate(-50%, -20px);
+  pointer-events: none;
+}
+
+.clickable-element:hover .popup-trigger-home1,
+.clickable-element:hover .popup-trigger-home2 {
+  display: block; /* Show the popup triggers when the clickable element is hovered over */
+  visibility: visible;
+  transition: visibility 0s, linear 0.3s;
+}
+
+/* Media query for larger devices */
+@media only screen and (min-width: 768px) {
+  .background-container {
+    width: 100%;
+    height: 100vh;
+  }
+}
